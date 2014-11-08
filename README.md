@@ -11,7 +11,7 @@ make use of BookWorm.
 ### Development  
 BookWorm is currently under development...It is being developed for a class project.  
 
-    ##### The Tools We Are Using  
+    #### The Tools We Are Using  
     + Ruby on Rails
     + SQLite3
     + Bootstrap
