@@ -12,12 +12,12 @@ make use of BookWorm.
 BookWorm is currently under development...It is being developed for a class project.  
 
 
-####   The Tools We Are Using  
-    + Ruby on Rails
-    + SQLite3
-    + Bootstrap
-    + Google Books Api
-    + GoodReads Api  
+####   The Tools We Are Using
++ Ruby on Rails
++ SQLite3
++ Bootstrap
++ Google Books Api
++ GoodReads Api  
 
 
 
