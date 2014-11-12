@@ -1,3 +1,10 @@
 require "./goodreadsapi"
+require "nokogiri"
 
-GoodreadsApi.search_books_by_author("Orson Scott Card")
+raw_xml = GoodreadsApi.search_books("Ender's Game")
+xml_doc = Nokogiri::XML(raw_xml) do |config|
+	config.noblanks
+end
+
+print raw_xml
+
