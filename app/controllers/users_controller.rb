@@ -19,6 +19,10 @@ class UsersController < ApplicationController
     # debugger <- place this line anywhere in code to bring up debugger console in rails server pretty cool! See gem byebug.
   end
 
+  # Action: users#create 
+  # Route: /users
+  # Description: This method saves the user to the database after a 
+  # => successful sign up.
   def create
   	@user = User.new(user_params)
   	if @user.save
