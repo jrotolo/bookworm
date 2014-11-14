@@ -30,6 +30,7 @@ gem 'bcrypt', '3.1.7'
 group :development, :test do
   gem 'spring', '1.1.3'
   gem 'byebug', '3.4.0'
+  gem 'faker'
 end
 
 # Use ActiveModel has_secure_password
