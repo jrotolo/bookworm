@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[yElx2dvGSrA7utu7Gyx0Q]]></key>
+    <method><![CDATA[user_show]]></method>
+  </Request>
+  <user>
+  <id>512</id>
+  <name>John</name>
+  <user_name></user_name>
+  <link><![CDATA[http://www.goodreads.com/user/show/512-john]]></link>
+  <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/m_111x148-50097a33ecb86aff5faaa21487acffd3.png]]></image_url>
+  <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png]]></small_image_url>
+    <about><![CDATA[Last year I set aside a pile of 12 books, and told myself that I wouldn't buy any more until I finished those 12.  I made it through 9 before I broke down.  This year, I picked out 25.  <br><br>Granted, I already picked up a book from the library and borrowed one from a friend, but it isn't the same as buying.]]></about>
+    <age></age>
+    <gender>male</gender>
+    <location>Pleasant Hill, CA</location>
+    <website></website>
+    <joined>01/2007</joined>
+    <last_active>11/2012</last_active>
+    <interests></interests>
+    <favorite_books></favorite_books>
+    <favorite_authors>
+    </favorite_authors>
+    <updates_rss_url><![CDATA[http://www.goodreads.com/user/updates_rss/512.xml?key=zfUheplnUieGAVmwExZLvOhIr_4qWrB5Dw-aFAeFYpy3Efcs]]></updates_rss_url>
+    <reviews_rss_url><![CDATA[http://www.goodreads.com/review/list_rss/512.xml?key=zfUheplnUieGAVmwExZLvOhIr_4qWrB5Dw-aFAeFYpy3Efcs&shelf=%23ALL%23]]></reviews_rss_url>
+    <friends_count type="integer">5</friends_count>
+    <groups_count>0</groups_count>
+    <reviews_count type="integer">77</reviews_count>
+    <user_shelves type="array">
+  <user_shelf>
+    <book_count type="integer">67</book_count>
+    <description nil="true"></description>
+    <display_fields></display_fields>
+    <exclusive_flag type="boolean">true</exclusive_flag>
+    <featured type="boolean">true</featured>
+    <id type="integer">5849548</id>
+    <name>read</name>
+    <order nil="true"></order>
+    <per_page type="integer" nil="true"></per_page>
+    <recommend_for type="boolean">true</recommend_for>
+    <sort nil="true"></sort>
+    <sticky type="boolean" nil="true"></sticky>
+  </user_shelf>
+  <user_shelf>
+    <book_count type="integer">1</book_count>
+    <description nil="true"></description>
+    <display_fields></display_fields>
+    <exclusive_flag type="boolean">true</exclusive_flag>
+    <featured type="boolean">false</featured>
+    <id type="integer">1203</id>
+    <name>currently-reading</name>
+    <order nil="true"></order>
+    <per_page type="integer" nil="true"></per_page>
+    <recommend_for type="boolean">true</recommend_for>
+    <sort nil="true"></sort>
+    <sticky type="boolean" nil="true"></sticky>
+  </user_shelf>
+  <user_shelf>
+    <book_count type="integer">9</book_count>
+    <description nil="true"></description>
+    <display_fields></display_fields>
+    <exclusive_flag type="boolean">true</exclusive_flag>
+    <featured type="boolean">false</featured>
+    <id type="integer">1202</id>
+    <name>to-read</name>
+    <order>a</order>
+    <per_page type="integer" nil="true"></per_page>
+    <recommend_for type="boolean">true</recommend_for>
+    <sort>position</sort>
+    <sticky type="boolean" nil="true"></sticky>
+  </user_shelf>
+</user_shelves>
+      <updates type="array">
+      <update type="review">
+      <action_text><![CDATA[gave 5 stars to <a href="http://www.goodreads.com/book/show/101889.Startide_Rising">Startide Rising (The Uplift Saga, #2)</a> by <a href="http://www.goodreads.com/author/show/14078.David_Brin">David Brin</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/526748</link>
+      <image_url>http://d.gr-assets.com/books/1171482088s/101889.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 08:27:19 -0700</updated_at>
+          <action type="rating">
+            <rating>5</rating>
+          </action>
+        <object>
+          <book>
+            <id>101889</id>
+            <title><![CDATA[Startide Rising (The Uplift Saga, #2)]]></title>
+            <link>http://www.goodreads.com/book/show/101889.Startide_Rising</link>
+            <authors>
+  <author>
+    <id>14078</id>
+    <name>David Brin</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1352956147p5/14078.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1352956147p2/14078.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/14078.David_Brin]]></link>
+    <average_rating>3.88</average_rating>
+    <ratings_count>114866</ratings_count>
+    <text_reviews_count>3730</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 5 stars to <a href="http://www.goodreads.com/book/show/234489.The_Uplift_War">The Uplift War (The Uplift Saga, #3)</a> by <a href="http://www.goodreads.com/author/show/14078.David_Brin">David Brin</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/526747</link>
+      <image_url>http://d.gr-assets.com/books/1375272637s/234489.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 08:27:19 -0700</updated_at>
+          <action type="rating">
+            <rating>5</rating>
+          </action>
+        <object>
+          <book>
+            <id>234489</id>
+            <title><![CDATA[The Uplift War (The Uplift Saga, #3)]]></title>
+            <link>http://www.goodreads.com/book/show/234489.The_Uplift_War</link>
+            <authors>
+  <author>
+    <id>14078</id>
+    <name>David Brin</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1352956147p5/14078.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1352956147p2/14078.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/14078.David_Brin]]></link>
+    <average_rating>3.88</average_rating>
+    <ratings_count>114866</ratings_count>
+    <text_reviews_count>3730</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 4 stars to <a href="http://www.goodreads.com/book/show/101893.The_Practice_Effect">The Practice Effect (Paperback)</a> by <a href="http://www.goodreads.com/author/show/14078.David_Brin">David Brin</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/526741</link>
+      <image_url>http://d.gr-assets.com/books/1387734020s/101893.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 08:27:19 -0700</updated_at>
+          <action type="rating">
+            <rating>4</rating>
+          </action>
+        <object>
+          <book>
+            <id>101893</id>
+            <title>The Practice Effect</title>
+            <link>http://www.goodreads.com/book/show/101893.The_Practice_Effect</link>
+            <authors>
+  <author>
+    <id>14078</id>
+    <name>David Brin</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1352956147p5/14078.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1352956147p2/14078.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/14078.David_Brin]]></link>
+    <average_rating>3.88</average_rating>
+    <ratings_count>114866</ratings_count>
+    <text_reviews_count>3730</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+        <body><![CDATA[Entertaining adventure story. ]]></body>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 5 stars to <a href="http://www.goodreads.com/book/show/71.Traders_Guns_Money">Traders, Guns &amp; Money: Knowns and Unknowns in the Dazzling World of Derivatives (Paperback)</a> by <a href="http://www.goodreads.com/author/show/36.Satyajit_Das">Satyajit Das</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/115422</link>
+      <image_url>http://d.gr-assets.com/books/1386920548s/71.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 02:08:38 -0700</updated_at>
+          <action type="rating">
+            <rating>5</rating>
+          </action>
+        <object>
+          <book>
+            <id>71</id>
+            <title><![CDATA[Traders, Guns & Money: Knowns and Unknowns in the Dazzling World of Derivatives]]></title>
+            <link>http://www.goodreads.com/book/show/71.Traders_Guns_Money</link>
+            <authors>
+  <author>
+    <id>36</id>
+    <name>Satyajit Das</name>
+    <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/m_200x266-2515dcd7e86b9370184935e611ab831a.png]]></image_url>
+    <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/36.Satyajit_Das]]></link>
+    <average_rating>3.72</average_rating>
+    <ratings_count>1901</ratings_count>
+    <text_reviews_count>213</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+        <body><![CDATA[This is a great read that is clear and entertaining, but I'm not sure how many people are really interested in financial derivatives.  I work with them, so this book is providing a basic background that, so far, I haven't found anywhere else.     ]]></body>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 4 stars to <a href="http://www.goodreads.com/book/show/6138.The_Moonstone">The Moonstone (Paperback)</a> by <a href="http://www.goodreads.com/author/show/4012.Wilkie_Collins">Wilkie Collins</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/115420</link>
+      <image_url>http://d.gr-assets.com/books/1403192382s/6138.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 02:08:38 -0700</updated_at>
+          <action type="rating">
+            <rating>4</rating>
+          </action>
+        <object>
+          <book>
+            <id>6138</id>
+            <title>The Moonstone</title>
+            <link>http://www.goodreads.com/book/show/6138.The_Moonstone</link>
+            <authors>
+  <author>
+    <id>4012</id>
+    <name>Wilkie Collins</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1192222099p5/4012.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1192222099p2/4012.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/4012.Wilkie_Collins]]></link>
+    <average_rating>3.91</average_rating>
+    <ratings_count>124719</ratings_count>
+    <text_reviews_count>7822</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 4 stars to <a href="http://www.goodreads.com/book/show/41606.The_Best_of_C_M_Kornbluth">The Best of C. M. Kornbluth (Hardcover)</a> by <a href="http://www.goodreads.com/author/show/2768688.C_M_Kornbluth">C.M. Kornbluth</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/10220</link>
+      <image_url>http://d.gr-assets.com/books/1216925526s/41606.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 00:38:41 -0700</updated_at>
+          <action type="rating">
+            <rating>4</rating>
+          </action>
+        <object>
+          <book>
+            <id>41606</id>
+            <title>The Best of C. M. Kornbluth</title>
+            <link>http://www.goodreads.com/book/show/41606.The_Best_of_C_M_Kornbluth</link>
+            <authors>
+  <author>
+    <id>2768688</id>
+    <name>C.M. Kornbluth</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1355659187p5/2768688.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1355659187p2/2768688.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/2768688.C_M_Kornbluth]]></link>
+    <average_rating>4.00</average_rating>
+    <ratings_count>15894</ratings_count>
+    <text_reviews_count>785</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 5 stars to <a href="http://www.goodreads.com/book/show/41315.Syrup">Syrup (Paperback)</a> by <a href="http://www.goodreads.com/author/show/18741.Max_Barry">Max Barry</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/10087</link>
+      <image_url>http://d.gr-assets.com/books/1407076649s/41315.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 00:38:33 -0700</updated_at>
+          <action type="rating">
+            <rating>5</rating>
+          </action>
+        <object>
+          <book>
+            <id>41315</id>
+            <title>Syrup</title>
+            <link>http://www.goodreads.com/book/show/41315.Syrup</link>
+            <authors>
+  <author>
+    <id>18741</id>
+    <name>Max Barry</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1310004110p5/18741.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1310004110p2/18741.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/18741.Max_Barry]]></link>
+    <average_rating>3.80</average_rating>
+    <ratings_count>31267</ratings_count>
+    <text_reviews_count>3884</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+        <body><![CDATA[Very funny and a entertaining.  Everyone I know who has read this has enjoyed it.  ]]></body>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 3 stars to <a href="http://www.goodreads.com/book/show/41310.Dianne_Feinstein">Dianne Feinstein: Never Let Them See You Cry (Hardcover)</a> by <a href="http://www.goodreads.com/author/show/23265.Jerry_Roberts">Jerry Roberts</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/10086</link>
+      <image_url>http://d.gr-assets.com/books/1389323902s/41310.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 00:38:33 -0700</updated_at>
+          <action type="rating">
+            <rating>3</rating>
+          </action>
+        <object>
+          <book>
+            <id>41310</id>
+            <title><![CDATA[Dianne Feinstein: Never Let Them See You Cry]]></title>
+            <link>http://www.goodreads.com/book/show/41310.Dianne_Feinstein</link>
+            <authors>
+  <author>
+    <id>23265</id>
+    <name>Jerry Roberts</name>
+    <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_200x266-2201d4a48ef4852b422c278952e03be9.png]]></image_url>
+    <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-ccc56e79bcc2db9e6cdcd450a4940d46.png]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/23265.Jerry_Roberts]]></link>
+    <average_rating>3.61</average_rating>
+    <ratings_count>23</ratings_count>
+    <text_reviews_count>4</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 5 stars to <a href="http://www.goodreads.com/book/show/3942.Hyperion_Cantos">Hyperion Cantos: Hyperion / The Fall of Hyperion (Hardcover)</a> by <a href="http://www.goodreads.com/author/show/2687.Dan_Simmons">Dan Simmons</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/10032</link>
+      <image_url>http://d.gr-assets.com/books/1388935241s/3942.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 00:38:30 -0700</updated_at>
+          <action type="rating">
+            <rating>5</rating>
+          </action>
+        <object>
+          <book>
+            <id>3942</id>
+            <title><![CDATA[Hyperion Cantos: Hyperion / The Fall of Hyperion]]></title>
+            <link>http://www.goodreads.com/book/show/3942.Hyperion_Cantos</link>
+            <authors>
+  <author>
+    <id>2687</id>
+    <name>Dan Simmons</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1202439650p5/2687.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1202439650p2/2687.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/2687.Dan_Simmons]]></link>
+    <average_rating>4.01</average_rating>
+    <ratings_count>274235</ratings_count>
+    <text_reviews_count>14886</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 3 stars to <a href="http://www.goodreads.com/book/show/11290.Children_of_the_Night">Children of the Night (Mass Market Paperback)</a> by <a href="http://www.goodreads.com/author/show/2687.Dan_Simmons">Dan Simmons</a>]]></action_text>
+      <link>http://www.goodreads.com/review/show/10031</link>
+      <image_url>http://d.gr-assets.com/books/1385239549s/11290.jpg</image_url>
+        <actor>
+  <id type="integer">512</id>
+  <name>John</name>
+  <image_url>http://s.gr-assets.com/assets/nophoto/user/m_50x66-3fbaf32fc1fc48e6ffaf3f63a026f0ff.png</image_url>
+  <link>http://www.goodreads.com/user/show/512-john</link>
+</actor>
+      <updated_at>Thu, 31 Jul 2014 00:38:30 -0700</updated_at>
+          <action type="rating">
+            <rating>3</rating>
+          </action>
+        <object>
+          <book>
+            <id>11290</id>
+            <title>Children of the Night</title>
+            <link>http://www.goodreads.com/book/show/11290.Children_of_the_Night</link>
+            <authors>
+  <author>
+    <id>2687</id>
+    <name>Dan Simmons</name>
+    <image_url><![CDATA[http://d.gr-assets.com/authors/1202439650p5/2687.jpg]]></image_url>
+    <small_image_url><![CDATA[http://d.gr-assets.com/authors/1202439650p2/2687.jpg]]></small_image_url>
+    <link><![CDATA[http://www.goodreads.com/author/show/2687.Dan_Simmons]]></link>
+    <average_rating>4.01</average_rating>
+    <ratings_count>274235</ratings_count>
+    <text_reviews_count>14886</text_reviews_count>
+  </author>
+</authors>
+          </book>
+        </object>
+    </update>
+</updates>
+    <user_statuses>
+    </user_statuses>
+</user>
+
+</GoodreadsResponse>
