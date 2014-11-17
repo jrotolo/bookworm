@@ -9,6 +9,7 @@ class BooksController < ApplicationController
 
 		client = Goodreads::Client.new(:api_key => key, :api_secret => secret)
    		@books = client.search_books(params[:search]);
+        @title = "Browse Books"
 	end
 
 	# Route : books/show/:id
@@ -19,5 +20,10 @@ class BooksController < ApplicationController
 	# This will be a GET http action and will 
 	# retrieve book data from goodreads api
 	def search(query)
+		key = 'yElx2dvGSrA7utu7Gyx0Q'
+		secret = '7BHgX1AqLxtL5tUu70UAFoS3KCojwnSIez7tlk2fM'
+		client = Goodreads::Client.new(:api_key => key, :api_secret => secret)
+   		@books = client.search_books(params[:search]);
+
 	end
 end
