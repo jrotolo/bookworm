@@ -129,6 +129,10 @@ text-shadow:    none;
   font-weight: bold;
   line-height: 20px;
   color: white;
+  &:hover {
+    color: #BD261E;
+    text-decoration: none;
+  }
   white-space: nowrap;
 }
 
