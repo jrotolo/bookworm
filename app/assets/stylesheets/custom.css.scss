@@ -90,6 +90,7 @@ text-shadow:    none;
 .navbar-inverse {
     background-color: #BD261E;
     border-color: #030033;
+    font-weight: bold;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle,
@@ -122,7 +123,7 @@ text-shadow:    none;
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 20px;
   color: #00ff00;
   white-space: nowrap;
