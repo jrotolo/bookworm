@@ -5,6 +5,12 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <%= link_to "About", about_path %>
+        <style>
+        	body {
+    			background-image: url("bookworm_logo.png");
+			}
+		</style>
       </h1>
     </section>
     <section class="stats">
