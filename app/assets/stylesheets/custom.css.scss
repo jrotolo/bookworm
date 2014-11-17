@@ -81,7 +81,6 @@ p {
     }
 }
 
-
 .navbar .nav > li > a {
 color:          white;
 text-shadow:    none;
@@ -100,7 +99,7 @@ text-shadow:    none;
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color:white;
+  color: #00ff00;
   background-color:#BD261E;
 }
 
