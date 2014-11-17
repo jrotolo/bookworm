@@ -81,59 +81,52 @@ p {
     }
 }
 
-.navbar .nav > li > a {
-color:          white;
-text-shadow:    none;
-&:hover {
-  color: #00ff00;
-  text-decoration: none;
-}
-}
-
-.navbar-inverse {
-    background-color: #BD261E;
-    border-color: #030033;
-    font-weight: bold;
-}
-
-.navbar .nav li.dropdown.open > .dropdown-toggle,
-.navbar .nav li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: #00ff00;
-  background-color:#BD261E;
-}
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
 
 
+.open > .dropdown-menu {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);  
+  opacity:1;
+}
+  
 .dropdown-menu {
-    background-clip: padding-box;
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    display: none;
-    float: left;
-    left: 0;
-    list-style: none outside none;
-    margin: 2px 0 0;
-    min-width: 160px;
-    padding: 5px 0;
-    position: absolute;
-    top: 100%;
-    z-index: 1000;
+  opacity:.3;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
+  -webkit-transform: scale(1, 0);
+  display: block; 
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 
-.dropdown-menu li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: bold;
-  line-height: 20px;
-  color: #BD261E;
-  &:hover {
-    color: #00ff00;
-    text-decoration: none;
-  }
-  white-space: nowrap;
+/* Custom container */
+.container-fixed {
+  margin: 10% auto;
+  max-width: 480px;
+}
+
+  
+.navbar-nav
+{
+float:right;
+}
+
+h1,h2,h3,.highlight,.navbar a, .navbar-brand,#masthead h4 {
+  font-family:'Oswald',arial narrow,sans-serif;
+}
+
+h3 a
+{
+font-size: 24pt;
+}
+
+
+.img_cover{
+max-width: 150px;
+  
 }
 
 
