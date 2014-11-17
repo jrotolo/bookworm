@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   post 'login'    => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   
+  resources :books
+  
   # get /users/1/following & /users/1/followers
   resources :users do
     member do
