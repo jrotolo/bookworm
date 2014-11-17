@@ -106,7 +106,7 @@ text-shadow:    none;
 
 .dropdown-menu {
     background-clip: padding-box;
-    background-color: #BD261E;
+    background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px 6px 6px 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -128,9 +128,9 @@ text-shadow:    none;
   clear: both;
   font-weight: bold;
   line-height: 20px;
-  color: white;
+  color: #BD261E;
   &:hover {
-    color: #BD261E;
+    color: #00ff00;
     text-decoration: none;
   }
   white-space: nowrap;
