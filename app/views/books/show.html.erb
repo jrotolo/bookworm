@@ -1,0 +1,8 @@
+<% @books.results.work.each do |book| %>
+	<%= puts "Book id: #{book.id}" %>
+	<%= puts "Book title: #{book.best_book.title}" %>
+	<%= puts "Book author: #{book.best_book.author.name}" %>
+	<%= puts "Book rating: #{book.average_rating}" %>
+	<%= puts "Book publication: #{book.original_publication_year}" %>
+	<img src="<%= book.best_book.image_url %>" />
+<% end -%>
