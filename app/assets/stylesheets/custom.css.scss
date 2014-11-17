@@ -83,8 +83,12 @@ p {
 
 
 .navbar .nav > li > a {
-color:          #00ff00;
+color:          white;
 text-shadow:    none;
+&:hover {
+  color: #00ff00;
+  text-decoration: none;
+}
 }
 
 .navbar-inverse {
@@ -103,7 +107,7 @@ text-shadow:    none;
 
 .dropdown-menu {
     background-clip: padding-box;
-    background-color: #BD261E;
+    background-color: Teal;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px 6px 6px 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -125,7 +129,7 @@ text-shadow:    none;
   clear: both;
   font-weight: bold;
   line-height: 20px;
-  color: #00ff00;
+  color: white;
   white-space: nowrap;
 }
 
