@@ -1,16 +1,16 @@
-require 'client/books'
-require 'client/reviews'
-require 'client/authors'
-require 'client/users'
-require 'client/shelves'
-require 'client/friends'
+require 'goodreads-api/goodreads/client/books'
+require 'goodreads-api/goodreads/client/reviews'
+require 'goodreads-api/goodreads/client/author'
+require 'goodreads-api/goodreads/client/users'
+require 'goodreads-api/goodreads/client/shelves'
+require 'goodreads-api/goodreads/client/friends'
 
 module Goodreads
 	class Client
 		include Goodreads::Request
 		include Goodreads::Books
 		include Goodreads::Reviews
-		include Goodreads::Authors
+		include Goodreads::Author
 		include Goodreads::Users
 		include Goodreads::Shelves
 		include Goodreads::Friends

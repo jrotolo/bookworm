@@ -1,5 +1,5 @@
-require 'goodreads/request'
-require 'goodreads/client'
+require 'goodreads-api/goodreads/request'
+require 'goodreads-api/goodreads/client'
 
 # The wrapper module the will create a new instance of Client
 # All request to Goodreads will be done through the client ohject

@@ -1,6 +1,6 @@
 <h1>Browse Books</h1>
 
-<% form_tag search_path, :method => 'get' do %>
+<%= form_tag books_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
@@ -8,10 +8,12 @@
 <% end %>
 
 <% @books.results.work.each do |book| %>
-	<%= puts "Book id: #{book.id}" %>
-	<%= puts "Book title: #{book.best_book.title}" %>
-	<%= puts "Book author: #{book.best_book.author.name}" %>
-	<%= puts "Book rating: #{book.average_rating}" %>
-	<%= puts "Book publication: #{book.original_publication_year}" %>
-	<img src="<%= book.best_book.image_url %>" />
-<% end -%>
+  <p>
+    <img src="<%= book.best_book.image_url %>" />
+    <% "id: #{book.id}" %>
+    <%= book.best_book.title %>
+    <%= "by: #{book.best_book.author.name}" %>
+    <%= "rating: #{book.average_rating}" %>
+    <%= "publication: #{book.original_publication_year}" %>
+  </p>
+<% end %>
