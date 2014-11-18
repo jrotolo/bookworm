@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
   # Description: Serves the about page.
   def about
   end
+
+  def team
+  end
 end

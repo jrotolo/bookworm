@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'about'     => 'static_pages#about'
   get 'signup'    => 'users#new'
   get 'login'     => 'sessions#new'
+  get 'team'      => 'static_pages#team'
   post 'login'    => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   
