@@ -115,13 +115,13 @@
 
         <div class="method-description">
           
-          
+          <p>get friends by user id</p>
           
           
 
           
           <div class="method-source-code" id="friends-source">
-            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/friends.rb, line 4</span>
+            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/friends.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">friends</span>(<span class="ruby-identifier">user_id</span>)
         <span class="ruby-identifier">response</span> = <span class="ruby-identifier">oauth_request</span>(<span class="ruby-node">&quot;/friend/user/#{user_id}&quot;</span>)
         <span class="ruby-constant">Hashie</span><span class="ruby-operator">::</span><span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">data</span>[<span class="ruby-string">&#39;friends&#39;</span>])

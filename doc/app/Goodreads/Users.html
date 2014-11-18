@@ -115,13 +115,13 @@
 
         <div class="method-description">
           
-          
+          <p>Get user by id</p>
           
           
 
           
           <div class="method-source-code" id="user-source">
-            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/users.rb, line 3</span>
+            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/users.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">user</span>(<span class="ruby-identifier">id</span>)
         <span class="ruby-identifier">response</span> = <span class="ruby-identifier">request</span>(<span class="ruby-string">&#39;/user/show&#39;</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>)
         <span class="ruby-constant">Hashie</span><span class="ruby-operator">::</span><span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>[<span class="ruby-string">&#39;user&#39;</span>])

@@ -117,13 +117,13 @@
 
         <div class="method-description">
           
-          <p>Get author info</p>
+          <p>Get author info by author id</p>
           
           
 
           
           <div class="method-source-code" id="author-source">
-            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/author.rb, line 4</span>
+            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/author.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">author</span>(<span class="ruby-identifier">id</span>, <span class="ruby-identifier">args</span>={})
         <span class="ruby-identifier">args</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
         <span class="ruby-identifier">response</span> = <span class="ruby-identifier">request</span>(<span class="ruby-string">&#39;/author/show&#39;</span>, <span class="ruby-identifier">args</span>)
@@ -152,13 +152,13 @@
 
         <div class="method-description">
           
-          
+          <p>Get author info by author name</p>
           
           
 
           
           <div class="method-source-code" id="author_by_name-source">
-            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/author.rb, line 10</span>
+            <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/author.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">author_by_name</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">args</span>={})
         <span class="ruby-identifier">args</span>[<span class="ruby-value">:name</span>] = <span class="ruby-identifier">name</span>
         <span class="ruby-identifier">response</span> = <span class="ruby-identifier">request</span>(<span class="ruby-string">&#39;/author/author_url&#39;</span>, <span class="ruby-identifier">args</span>)

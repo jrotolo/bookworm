@@ -123,24 +123,18 @@
           <div class="method-source-code" id="shelf-source">
             <pre><span class="ruby-comment"># File lib/goodreads-api/goodreads/client/shelves.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">shelf</span>(<span class="ruby-identifier">user_id</span>, <span class="ruby-identifier">shelf_name</span>, <span class="ruby-identifier">args</span>={})
-        <span class="ruby-comment"># Deal with options</span>
         <span class="ruby-identifier">args</span> = <span class="ruby-identifier">args</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-value">:shelf</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">shelf_name</span>, <span class="ruby-value">:v</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2</span>)
 
-        <span class="ruby-comment"># send out request</span>
         <span class="ruby-identifier">response</span> = <span class="ruby-identifier">request</span>(<span class="ruby-node">&quot;/review/list/#{user_id}.xml&quot;</span>, <span class="ruby-identifier">args</span>)
         <span class="ruby-identifier">reviews</span> = <span class="ruby-identifier">response</span>[<span class="ruby-string">&#39;reviews&#39;</span>][<span class="ruby-string">&#39;review&#39;</span>]
 
-        <span class="ruby-comment"># Grab books from users shelf</span>
         <span class="ruby-identifier">books</span> = []
 
-        <span class="ruby-comment"># if reviews exist put them into an array</span>
         <span class="ruby-keyword">unless</span> <span class="ruby-identifier">reviews</span>.<span class="ruby-identifier">nil?</span>
                 <span class="ruby-identifier">reviews</span> = [<span class="ruby-identifier">reviews</span>] 
-                <span class="ruby-comment"># make earch book an instance of Hashie::Mash from reviews</span>
                 <span class="ruby-identifier">books</span> = <span class="ruby-identifier">reviews</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-constant">Hashie</span><span class="ruby-operator">::</span><span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">e</span>) } 
         <span class="ruby-keyword">end</span>
 
-        <span class="ruby-comment"># This represents a shelf object</span>
         <span class="ruby-constant">Hashie</span><span class="ruby-operator">::</span><span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>({
                 <span class="ruby-value">:start</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">data</span>[<span class="ruby-string">&#39;reviews&#39;</span>][<span class="ruby-string">&#39;start&#39;</span>].<span class="ruby-identifier">to_i</span>,
                 <span class="ruby-value">:end</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">data</span>[<span class="ruby-string">&#39;reviews&#39;</span>][<span class="ruby-string">&#39;end&#39;</span>].<span class="ruby-identifier">to_i</span>,

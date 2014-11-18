@@ -132,16 +132,13 @@
 
         <div class="method-description">
           
-          <p>Action: users#create  Route: /users Description: This method saves the user
-to the database after a</p>
-
-<h1 id="method-i-create-label-%3E+successful+sign+up.">&gt; successful sign up.<span><a href="#method-i-create-label-%3E+successful+sign+up.">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+          <p>This method saves the user to the database after a  successful sign up.</p>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 30</span>
+            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
       <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user_params</span>)
       <span class="ruby-keyword">if</span> <span class="ruby-ivar">@user</span>.<span class="ruby-identifier">save</span>
@@ -175,13 +172,13 @@ to the database after a</p>
 
         <div class="method-description">
           
-          
+          <p>Sets the followers relationship</p>
           
           
 
           
           <div class="method-source-code" id="followers-source">
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 48</span>
+            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 40</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">followers</span>
   <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Followers&quot;</span>
   <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
@@ -211,13 +208,13 @@ to the database after a</p>
 
         <div class="method-description">
           
-          
+          <p>Sets the following relationship</p>
           
           
 
           
           <div class="method-source-code" id="following-source">
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 41</span>
+            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 32</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">following</span>
   <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Following&quot;</span>
   <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
@@ -280,17 +277,13 @@ to the database after a</p>
 
         <div class="method-description">
           
-          <p>Action: users#new  Route: users/new or /signup (new_user or signup) View:
-users/new.html.erb Description: This method passes a new user object to the
-view,</p>
-
-<h1 id="method-i-new-label-%3E+the+signup+form.">&gt; the signup form.<span><a href="#method-i-new-label-%3E+the+signup+form.">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+          <p>This method passes a new user object to the view,  the signup form.</p>
           
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 12</span>
+            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 8</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
       <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -317,19 +310,16 @@ view,</p>
 
         <div class="method-description">
           
-          <p>Action: users#show  Route: /users/:id (user) View: users/show.html.erb
-Description: This method routes information to the show view.</p>
-
-<h1 id="method-i-show-label-%3E+the+user+profile+page+based+on+%3Aid">&gt; the user profile page based on :id<span><a href="#method-i-show-label-%3E+the+user+profile+page+based+on+%3Aid">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+          <p>Description: This method routes information to the show view. the user
+profile page based on :id</p>
           
           
 
           
           <div class="method-source-code" id="show-source">
-            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 21</span>
+            <pre><span class="ruby-comment"># File app/controllers/users_controller.rb, line 14</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">show</span>
   <span class="ruby-ivar">@user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
-  <span class="ruby-comment"># debugger &lt;- place this line anywhere in code to bring up debugger console in rails server pretty cool! See gem byebug.</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           

@@ -146,7 +146,7 @@
 
           
           <div class="method-source-code" id="follow-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 32</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 21</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">follow</span>(<span class="ruby-identifier">other_user</span>)
   <span class="ruby-identifier">active_relationships</span>.<span class="ruby-identifier">create</span>(<span class="ruby-identifier">followed_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">other_user</span>.<span class="ruby-identifier">id</span>) 
 <span class="ruby-keyword">end</span></pre>
@@ -179,7 +179,7 @@
 
           
           <div class="method-source-code" id="following-3F-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 42</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 31</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">following?</span>(<span class="ruby-identifier">other_user</span>)
   <span class="ruby-identifier">following</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">other_user</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -212,7 +212,7 @@
 
           
           <div class="method-source-code" id="unfollow-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 37</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 26</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">unfollow</span>(<span class="ruby-identifier">other_user</span>)
   <span class="ruby-identifier">active_relationships</span>.<span class="ruby-identifier">find_by</span>(<span class="ruby-identifier">followed_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">other_user</span>.<span class="ruby-identifier">id</span>).<span class="ruby-identifier">destroy</span>
 <span class="ruby-keyword">end</span></pre>

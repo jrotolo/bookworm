@@ -124,13 +124,13 @@
 
         <div class="method-description">
           
-          
+          <p>Creates a following/follwer relationship</p>
           
           
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/relationships_controller.rb, line 3</span>
+            <pre><span class="ruby-comment"># File app/controllers/relationships_controller.rb, line 4</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
   <span class="ruby-identifier">user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:followed_id</span>])
   <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">follow</span>(<span class="ruby-identifier">user</span>)
@@ -159,13 +159,13 @@
 
         <div class="method-description">
           
-          
+          <p>Destroys a following/follwer relationship</p>
           
           
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/relationships_controller.rb, line 9</span>
+            <pre><span class="ruby-comment"># File app/controllers/relationships_controller.rb, line 11</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
   <span class="ruby-identifier">user</span> = <span class="ruby-constant">Relationship</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>]).<span class="ruby-identifier">followed</span>
   <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">unfollow</span>(<span class="ruby-identifier">user</span>)

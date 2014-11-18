@@ -133,7 +133,7 @@ to log in page</p>
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 11</span>
+            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 9</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
   <span class="ruby-identifier">user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find_by</span>(<span class="ruby-identifier">email</span><span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:session</span>][<span class="ruby-value">:email</span>].<span class="ruby-identifier">downcase</span>)
   <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">authenticate</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:session</span>][<span class="ruby-value">:password</span>])
@@ -173,7 +173,7 @@ to log in page</p>
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 24</span>
+            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 22</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
   <span class="ruby-identifier">logout</span>
   <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_url</span>
@@ -201,13 +201,13 @@ to log in page</p>
 
         <div class="method-description">
           
-          <p>Route : /login Views : sessions/new.html.erb Renders the login page</p>
+          <p>Shows the login page</p>
           
           
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 6</span>
+            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 4</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
