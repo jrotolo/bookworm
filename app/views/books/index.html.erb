@@ -19,7 +19,7 @@
         <ul>
           <li id="book_item">
             <a href=<%= "/books/#{book.best_book.id}" %>> <img src="<%= book.best_book.image_url %>" /></a>
-            <%= "id: #{book.id}" %>
+            <% "id: #{book.id}" %>
             <%= book.best_book.title %> 
             <%= "by: #{book.best_book.author.name}" %>
             <%= "rating: #{book.average_rating}" %>
