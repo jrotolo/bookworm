@@ -14,6 +14,11 @@ class BooksController < ApplicationController
 
 	# Route : books/show/:id
 	def show
+      key = 'yElx2dvGSrA7utu7Gyx0Q'
+      secret = '7BHgX1AqLxtL5tUu70UAFoS3KCojwnSIez7tlk2fM'
+      
+      client = Goodreads::Client.new(:api_key => key, :api_secret => secret)
+      @book = client.book(params[:id])
 	end
 
 	# Route : books/search?query=search_term
