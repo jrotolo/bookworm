@@ -1,0 +1,32 @@
+<% provide(:title, @title) %>
+<div class="row">
+  <h1 class="page-header">Browse Books</h1>
+
+  <div class="form-group search_bar">
+    <%= form_tag books_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search], class: "form-control" %>
+        <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
+      </p>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="book_list">
+    <% unless @books.results.nil? %>
+      <% @books.results.work.each do |book| %>
+        <ul>
+        <li id="book_item">
+        <a href="#{book.url}"> <img src="<%= book.best_book.image_url %>" /></a>
+          <% "id: #{book.id}" %>
+          <%= book.best_book.title %> 
+          <%= "by: #{book.best_book.author.name}" %>
+          <%= "rating: #{book.average_rating}" %>
+          <% "publication: #{book.original_publication_year}" %>
+        </li>
+        </ul>
+      <% end %>
+    <% end %>
+  </div>
+</div>

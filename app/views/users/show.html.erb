@@ -10,5 +10,20 @@
     <section class="stats">
       <%= render 'shared/stats' %>
     </section>
+    <section class="follow-btn">
+      <%= render 'follow_form' if logged_in? %>
+    </section>
   </aside>
+  <div class="col-md-8">
+    
+
+    <!-- BookShelves and Clubs Go Here -->
+    <section class="bookshelves page-header">
+      <h3>Bookshelves</h3>
+    </section>
+
+    <section class="bookgroups page-header">
+      <h3>Book Groups</h3>
+    </section>
+  </div>
 </div>
