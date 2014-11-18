@@ -17,14 +17,14 @@
     <% unless @books.results.nil? %>
       <% @books.results.work.each do |book| %>
         <ul>
-        <li id="book_item">
-        <a href="#{book.url}"> <img src="<%= book.best_book.image_url %>" /></a>
-          <% "id: #{book.id}" %>
-          <%= book.best_book.title %> 
-          <%= "by: #{book.best_book.author.name}" %>
-          <%= "rating: #{book.average_rating}" %>
-          <% "publication: #{book.original_publication_year}" %>
-        </li>
+          <li id="book_item">
+            <a href=<%= "/books/#{book.best_book.id}" %>> <img src="<%= book.best_book.image_url %>" /></a>
+            <%= "id: #{book.id}" %>
+            <%= book.best_book.title %> 
+            <%= "by: #{book.best_book.author.name}" %>
+            <%= "rating: #{book.average_rating}" %>
+            <% "publication: #{book.original_publication_year}" %>
+          </li>
         </ul>
       <% end %>
     <% end %>
