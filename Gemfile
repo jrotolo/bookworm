@@ -31,6 +31,9 @@ gem 'bcrypt', '3.1.7'
 
 gem "will_paginate"
 
+gem "rest-client"
+gem "hashie"
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Byebug used for debugging through weBRICK rails server.
 group :development, :test do

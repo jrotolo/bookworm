@@ -24,7 +24,7 @@ module Goodreads
 			args.merge!(:format => API_FORMAT, :key => key)
 
 			# Handle request with RestClient
-			reply = RestClient.get(url, :params => args){ |response, request, result, &block|
+			reply = RestClient.get(url, :params => args) do |response, request, result, &block| 
 				case response.code
 					when 200
 						response.return!(request, result, &block)
@@ -43,5 +43,5 @@ module Goodreads
 			hash.delete('Request')
 			hash
 		end
-	end
-end
+    end
+  end

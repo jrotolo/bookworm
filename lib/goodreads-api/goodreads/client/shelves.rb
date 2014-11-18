@@ -17,7 +17,7 @@ module Goodreads
 			unless reviews.nil?
 				reviews = [reviews] 
 				# make earch book an instance of Hashie::Mash from reviews
-				books = reviews.map { |e| Hashie::Mash.new(e) 
+				books = reviews.map { |e| Hashie::Mash.new(e) } 
 			end
 
 			# This represents a shelf object

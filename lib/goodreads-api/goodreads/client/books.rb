@@ -7,7 +7,7 @@ module Goodreads
 		def search_books(query, args={})
 			args[:query] = query.to_s.strip
 			response = request('/search/index/', args)
-			Hashie::Mash.new(reponse['search'])
+			Hashie::Mash.new(response['search'])
 		end
 
 		# Get book by id
