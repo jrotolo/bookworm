@@ -11,19 +11,17 @@ module Goodreads
 		# path - Request path
 		# args - Arguments hash
 		def request(path, args={})
-			# Build url
 			url = "#{BASE_URL}#{path}"
 			key = api_key || Goodreads.config[:api_key]	
 
-			# Error need api key
 			if key.nil?
 				puts 'API key required'
 			end
 
-			# Set up params
+
 			args.merge!(:format => API_FORMAT, :key => key)
 
-			# Handle request with RestClient
+
 			reply = RestClient.get(url, :params => args) do |response, request, result, &block| 
 				case response.code
 					when 200
@@ -38,6 +36,7 @@ module Goodreads
 			parse(reply)
 		end
 
+		# Parse xml response from goodreads
 		def parse(response)
 			hash = Hash.from_xml(response.body)['GoodreadsResponse']
 			hash.delete('Request')

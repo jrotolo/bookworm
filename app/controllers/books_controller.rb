@@ -1,8 +1,8 @@
 
 class BooksController < ApplicationController
     require 'goodreads-api/goodreads'	
-	# Route : books/index
-	# The default book page
+	
+	# The defualt book browsing page
 	def index
 		key = 'yElx2dvGSrA7utu7Gyx0Q'
 		secret = '7BHgX1AqLxtL5tUu70UAFoS3KCojwnSIez7tlk2fM'
@@ -12,7 +12,7 @@ class BooksController < ApplicationController
         @title = "Browse Books"
 	end
 
-	# Route : books/show/:id
+	# The show page for individual books
 	def show
       key = 'yElx2dvGSrA7utu7Gyx0Q'
       secret = '7BHgX1AqLxtL5tUu70UAFoS3KCojwnSIez7tlk2fM'
@@ -21,7 +21,6 @@ class BooksController < ApplicationController
       @book = client.book(params[:id])
 	end
 
-	# Route : books/search?query=search_term
 	# This will be a GET http action and will 
 	# retrieve book data from goodreads api
 	def search(query)

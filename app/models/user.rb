@@ -16,17 +16,6 @@ class User < ActiveRecord::Base
 
   validates :password, length: { minimum: 6 }
   has_secure_password
-
-  # With the current relationship set up for following users
-  # we can make calls like so:
-  # user.following.include?(other_user)
-  # user.following.find(other_user)
-  # following is like an array of users.
-  # We also have methods like
-  # active_relationship.follower
-  # active_relationship.followed
-  # user.active_relationships.create(followed_id: user.id)
-  # user.active_relationships.build(followed_id: user.id) <- returns an object
   
   # To follow a user
   def follow(other_user)

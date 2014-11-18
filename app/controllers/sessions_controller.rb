@@ -1,8 +1,6 @@
 class SessionsController < ApplicationController
 
-  # Route : /login
-  # Views : sessions/new.html.erb
-  # Renders the login page
+  # Shows the login page 
   def new
   end
 
