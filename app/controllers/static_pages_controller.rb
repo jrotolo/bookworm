@@ -9,4 +9,7 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  # Serves the team page.
+  def team
+  end
 end
