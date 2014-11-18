@@ -1,0 +1,29 @@
+<% provide :title, @book.title %>
+<style> 
+  li {
+    list-style: none;
+  }
+</style>
+<div class="row">
+  <aside class="col-md-11">
+    <div class="book_info">
+        <img style="float: left; margin: 0 20px 10px 0; height: 200px; width 100px;" src="<%= @book.image_url %>" />
+        <ul>
+          <h3><li><%= @book.title %></li></h3>
+          <% if @book.authors.name %>
+            <li>Author: <%= @book.authors.author.name %></li>
+          <% end %>
+          <li>ISBN #: <%= @book.isbn %></li>
+          <li>Publication Date: <%= @book.publication_month %>/<%= @book.publication_day %>/<%= @book.publication_year %></li>
+          <li>Publisher: <%= @book.publisher %></li>
+        </ul>
+    </div>
+    <section>
+      <h4>Summary</h4>
+      <p><%= raw @book.description %></p>
+    </section>
+  </aside>
+
+
+    
+  
