@@ -22,6 +22,19 @@
       <h4>Summary</h4>
       <p><%= raw @book.description %></p>
     </section>
+    <section>
+      <h4>Similar Books</h4>
+      <% i = 0 %>
+      <% @book.similar_books.each do |item| %>
+      <ul>
+        <% while !(item[1][i].nil?) %>
+          <img style="" src="<%= item[1][i].image_url %>" />
+          <li><%= item[1][i].title %></li>
+          <% i += 1 %>
+        <% end %>
+      </ul>
+      <% end %>
+    </section>
   </aside>
 
 
