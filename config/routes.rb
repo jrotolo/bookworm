@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'team'      => 'static_pages#team'
   
   resources :books
+  resources :bookclubs
   
   # get /users/1/following & /users/1/followers
   resources :users do
