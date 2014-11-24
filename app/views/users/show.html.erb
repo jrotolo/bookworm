@@ -1,11 +1,13 @@
 <% provide(:title, @user.name) %>
 <style>
-  li {
+  li#clubs {
     list-style-type: none;
     margin-right: 0px;
+    margin-top: 10px;
     float: left; 
+
   }
-  ul {
+  div#bookclubs ul {
     padding-left: 2px;
   }
 
@@ -37,11 +39,13 @@
         <div id="bookclubs">
           <% @user.bookclubs.each do |club| %>
             <ul>
-              <li>
+              <li id="clubs"><h4 style="margin: 0;">
               <span class="glyphicon glyphicon-book" aria-hidden="true" style="margin-right: 10px;"></span>
               <%= link_to club.name, "/bookclubs/#{club.id}", {:style =>'color:#B20000;', :class => "css_class"}  %>
+              <% if false %>
                 <span style="margin-left: 200px;"><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></span>
-              </li><br />
+              <% end %>
+            </li></h4><br />
             </ul>
           <% end %>
         </div>
