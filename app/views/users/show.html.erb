@@ -22,7 +22,7 @@
       <div id="bookclubs">
         <% @user.bookclubs.each do |club| %>
           <ul>
-            <li><%= club  %></li>
+            <li><%= link_to club.name, "/bookclubs/#{club.id}"  %></li>
           </ul>
         <% end %>
       </div>

@@ -1,5 +1,7 @@
 <h1>New Book Club</h1>
 <%= form_for :bookclub, url: newbookclub_path  do |f| %>
+  <% if params[:user] %><input type="hidden" id="bookclub_user_id" name="bookclub[user_id]" value="<%= params[:user] %>" /><% end %>
+ 
 <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
