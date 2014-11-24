@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+
+  get 'posts/new'
+
+  get 'posts/show'
+
+  get 'posts/edit'
+
+  get 'topics/new'
+
+  get 'topics/index'
+
+  get 'topics/show'
+
+  get 'topics/edit'
+
   get 'bookclubs/new'
 
   get 'bookclubs/index'
