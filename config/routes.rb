@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'bookclubs/new'
+
+  get 'bookclubs/index'
+
+  get 'bookclubs/show'
+
+  get 'bookclubs/create'
+
   root               'static_pages#home'
   get 'about'     => 'static_pages#about'
   get 'users'     => 'users#index'
