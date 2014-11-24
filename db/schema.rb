@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124160614) do
+ActiveRecord::Schema.define(version: 20141124161706) do
 
   create_table "bookclubs", force: true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20141124160614) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "topic_id"
   end
 
   create_table "relationships", force: true do |t|
@@ -43,6 +44,7 @@ ActiveRecord::Schema.define(version: 20141124160614) do
     t.datetime "last_post_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "bookclub_id"
   end
 
   create_table "users", force: true do |t|
