@@ -7,7 +7,8 @@ class TopicsController < ApplicationController
   def create
     @topic = Topic.new(topic_params)
     if @topic.save
-      @topic = Topic.new(:name => params[:topic][:name], 
+      @topic = Topic.new(:name => params[:topic][:name],
+                         :content => params[:topic][:content],
                          :last_poster_id => current_user.id,
                          :last_post_at => Time.now,
                          :bookclub_id => params[:topic][:bookclub_id])
@@ -31,7 +32,7 @@ class TopicsController < ApplicationController
   private
 
   def topic_params
-    params.require(:topic).permit(:name, :last_poster_id, :last_post_at,
+    params.require(:topic).permit(:name, :content, :last_poster_id, :last_post_at,
                                   :bookclub_id)
   end
 

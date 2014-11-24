@@ -1,16 +1,20 @@
-<h1><%= @bookclub.name %></h1>
+<h1 style="color:#1F4C0F;"><%= @bookclub.name %></h1>
 <div class="row">
-  <p>
-    <%= link_to "Add a topic", "/topics/new?bookclub=#{@bookclub.id}" %>
-  </p>
-  <div class="topics">
-    <% @bookclub.topics.each do |topic| %>
-      <ul>
-        <li>
-          <h4><%= link_to h(topic.name), topic_path(topic.id) %></h4>
-        </li>
-      </ul>
-    <% end %>
-  </div>
-  
+  <div class="col-md-6">
+    <p style="margin-left: 40px;">
+      <%= link_to "Add a topic", "/topics/new?bookclub=#{@bookclub.id}", class: "btn btn-primary" %>
+      <%= link_to "Back to bookclubs", "/users/#{@bookclub.user_id}/bookclubs" %>
+    </p>
+    <div class="topics">
+      <% @bookclub.topics.each do |topic| %>
+        <ul style="list-style-type: none; margin-top: 50px;">
+          <li>
+          <h3><%= link_to h(topic.name), topic_path(topic.id), {:style => 'color:#B20000;',
+                  :class => "css_class"} %></h3>
+            </li>
+            <li><%= topic.last_post_at %></li>
+        </ul>
+      <% end %>
+    </div>
+  </div> 
 </div>

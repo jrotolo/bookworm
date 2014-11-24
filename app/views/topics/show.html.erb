@@ -1,2 +1,10 @@
-<h1>Topics#show</h1>
-<p>Find me in app/views/topics/show.html.erb</p>
+<div class="row">
+  <h1><%= @topic.name %></h1> 
+  <span><%= link_to "Back to topics", "/bookclubs/#{@topic.bookclub_id}" %></span>
+  <div class="content" style="background: #E6E6E6; height: 100px; widht: 100px;">
+    <h4><%= @topic.content %></h4>
+  </div>
+
+  <div class="comments page-header">
+    <h4>Comments</h4>
+</div>

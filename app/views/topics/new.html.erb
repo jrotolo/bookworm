@@ -8,8 +8,12 @@
   </p>
 
   <p>
-    <textarea name="post[content]" cols="80" rows="20"><%= @post.content %></textarea>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %><br />
   </p>
+ <!-- <p>
+    <textarea name="post[content]" cols="80" rows="20">@post.content %></textarea>
+  </p> -->
 
   <p><%= f.submit "Create", class: "btn btn-primary" %></p>
 <% end %>
