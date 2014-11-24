@@ -38,8 +38,9 @@
           <% @user.bookclubs.each do |club| %>
             <ul>
               <li>
-                <%= link_to club.name, "/bookclubs/#{club.id}"  %>
-                <%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %>
+              <span class="glyphicon glyphicon-book" aria-hidden="true" style="margin-right: 10px;"></span>
+              <%= link_to club.name, "/bookclubs/#{club.id}", {:style =>'color:#B20000;', :class => "css_class"}  %>
+                <span style="margin-left: 200px;"><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></span>
               </li><br />
             </ul>
           <% end %>
