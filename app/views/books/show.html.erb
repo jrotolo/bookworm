@@ -26,10 +26,14 @@
       <h4>Similar Books</h4>
       <% i = 0 %>
       <% @book.similar_books.each do |item| %>
-      <ul>
+      <ul style="">
         <% while !(item[1][i].nil?) %>
-          <img style="" src="<%= item[1][i].image_url %>" />
-          <li><%= item[1][i].title %></li>
+          <div class="" style="float: left; margin: 0 40px 10px; 10px;">
+            <img style="float: left;" src="<%= item[1][i].image_url %>" />
+            <li style="float: left; margin-left: 10px;"><%= item[1][i].title %></li><br />
+            <li style="float: left; margin-left: 10px;">Rating: <%= item[1][i].average_rating %></li><br />
+            <li style="float: left; margin-left: 10px;">ISBN: <%= item[1][i].isbn %></li>
+          </div>
           <% i += 1 %>
         <% end %>
       </ul>
