@@ -1,4 +1,20 @@
 <% provide(:title, @user.name) %>
+<style>
+  li {
+    list-style-type: none;
+    margin-right: 0px;
+    float: left; 
+  }
+  ul {
+    padding-left: 2px;
+  }
+
+  p { 
+    top: 5px;
+    right: 3px;
+  }
+</style>
+
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
@@ -17,15 +33,17 @@
   <div class="col-md-8">
     
     <section class="bookgroups page-header">
-      <h3>Book Clubs</h3>
-      <%= link_to "Create Book Club", "/bookclubs/new?user=#{@user.id}" %>
-      <div id="bookclubs">
-        <% @user.bookclubs.each do |club| %>
-          <ul>
-            <li><%= link_to club.name, "/bookclubs/#{club.id}"  %></li>
-          </ul>
-        <% end %>
-      </div>
+      <h3>Book Clubs <span style="margin-left: 80px;"><%= link_to "Create Book Club", "/bookclubs/new?user=#{@user.id}", class: "btn btn-primary" %></span></h3>
+        <div id="bookclubs">
+          <% @user.bookclubs.each do |club| %>
+            <ul>
+              <li>
+                <%= link_to club.name, "/bookclubs/#{club.id}"  %>
+                <%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %>
+              </li><br />
+            </ul>
+          <% end %>
+        </div>
     </section>
 
     <!-- BookShelves and Clubs Go Here -->

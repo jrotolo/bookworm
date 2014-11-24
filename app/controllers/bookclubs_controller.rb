@@ -14,15 +14,21 @@ class BookclubsController < ApplicationController
   end
 
   def create
-    #@user = User.find(params[:user_id])
     @bookclub = Bookclub.new(bookclub_params)
     if @bookclub.save
       @bookclub = Bookclub.new(:name => params[:bookclub][:name], 
-                               :description => params[:bookclub][:description], :user_id =>params[:bookclub][:user_id])
+                               :description => params[:bookclub][:description], 
+                               :user_id =>params[:bookclub][:user_id])
       redirect_to "/users/#{@bookclub.user_id}/bookclubs"
     else
       render :action => 'new'
     end
+  end
+
+  def destroy
+    @bookclub = Bookclub.find(params[:id])
+    @bookclub.destroy
+    redirect_to current_user
   end
 
   private
