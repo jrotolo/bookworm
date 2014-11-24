@@ -1,6 +1,5 @@
-<h1>New Book Club</h1>
-<%= form_for :bookclub, url: newbookclub_path  do |f| %>
-<p>
+<% form_for @bookclub do |f| %>
+  <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
@@ -10,5 +9,5 @@
     <%= f.text_area :description %>
   </p>
 
-  <p><%= f.submit "Create", class: "btn btn-primary" %></p>
+  <p><%= f.submit "Create" %></p>
 <% end %>

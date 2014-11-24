@@ -1,2 +1,15 @@
-<h1>Topics#new</h1>
-<p>Find me in app/views/topics/new.html.erb</p>
+<h1>New Topic</h1>
+<%= form_for :topic, url: newtopic_path  do |f| %>
+  <% if params[:bookclub] %><input type="hidden" id="topic_bookclub_id" name="topic[bookclub_id]" value="<%= params[:bookclub] %>" />
+  <% end %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <textarea name="post[content]" cols="80" rows="20"><%= @post.content %></textarea>
+  </p>
+
+  <p><%= f.submit "Create", class: "btn btn-primary" %></p>
+<% end %>

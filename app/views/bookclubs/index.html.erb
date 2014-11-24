@@ -1,2 +1,16 @@
+i<% provide(:title, @title) %>
 <h1>Bookclubs#index</h1>
-<p>Find me in app/views/bookclubs/index.html.erb</p>
+
+<% for bookclub in @bookclubs %>
+  <ul>
+    <li><h4><%= link_to h(bookclub.name), bookclub_path(bookclub.id) %></h4>
+    <small><%= bookclub.topics.count %> topics</small><br />
+    <%= h bookclub.description %><li>
+    <li><%= bookclub.user_id.class %></li>
+  </ul>
+
+<% end %>
+
+<p>
+  <%= link_to "New BookClub", "/bookclubs/new?user_id=#{current_user.id}" %>
+</p>

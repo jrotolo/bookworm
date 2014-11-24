@@ -1,28 +1,4 @@
 Rails.application.routes.draw do
-  get 'posts/index'
-
-  get 'posts/new'
-
-  get 'posts/show'
-
-  get 'posts/edit'
-
-  get 'topics/new'
-
-  get 'topics/index'
-
-  get 'topics/show'
-
-  get 'topics/edit'
-
-  get 'bookclubs/new'
-
-  get 'bookclubs/index'
-
-  get 'bookclubs/show'
-
-  get 'bookclubs/create'
-
   root               'static_pages#home'
   get 'about'     => 'static_pages#about'
   get 'users'     => 'users#index'
@@ -30,15 +6,20 @@ Rails.application.routes.draw do
   get 'login'     => 'sessions#new'
   post 'login'    => 'sessions#create'
   post 'search'   => 'books#search'
+  post 'newbookclub' => 'bookclubs#create'
+  post 'newtopic' => 'topics#create'
+  post 'newpost'  => 'posts#create'
   delete 'logout' => 'sessions#destroy'
   get 'team'      => 'static_pages#team'
 
   resources :books
-  
-  # get /users/1/following & /users/1/followers
+  resources :topics
+  resources :posts
+  resources :bookclubs
   resources :users do
     member do
       get :following, :followers
+      get :bookclubs
     end
   end
 

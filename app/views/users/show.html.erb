@@ -16,14 +16,21 @@
   </aside>
   <div class="col-md-8">
     
+    <section class="bookgroups page-header">
+      <h3>Book Clubs</h3>
+      <%= link_to "Create Book Club", "/bookclubs/new?user=#{@user.id}" %>
+      <div id="bookclubs">
+        <% @user.bookclubs.each do |club| %>
+          <ul>
+            <li><%= club  %></li>
+          </ul>
+        <% end %>
+      </div>
+    </section>
 
     <!-- BookShelves and Clubs Go Here -->
     <section class="bookshelves page-header">
       <h3>Bookshelves</h3>
-    </section>
-
-    <section class="bookgroups page-header">
-      <h3>Book Groups</h3>
     </section>
   </div>
 </div>

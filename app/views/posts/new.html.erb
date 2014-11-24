@@ -1,2 +1,9 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<h1>New Post</h1>
+<%= form_for :post, url: newpost_path  do |f| %>
+<p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+
+  <p><%= f.submit "Create", class: "btn btn-primary" %></p>
+<% end %>

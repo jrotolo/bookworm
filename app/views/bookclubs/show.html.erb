@@ -1,2 +1,16 @@
-<h1>Bookclubs#show</h1>
-<p>Find me in app/views/bookclubs/show.html.erb</p>
+<h1><%= @bookclub.name %></h1>
+<div class="row">
+  <p>
+    <%= link_to "Add a topic", "/topics/new?bookclub=#{@bookclub.id}" %>
+  </p>
+  <div class="topics">
+    <% @bookclub.topics.each do |topic| %>
+      <ul>
+        <li>
+          <h4><%= link_to h(topic.name), topic_path(topic.id) %></h4>
+        </li>
+      </ul>
+    <% end %>
+  </div>
+  
+</div>
