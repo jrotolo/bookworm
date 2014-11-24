@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post 'search'   => 'books#search'
   delete 'logout' => 'sessions#destroy'
   get 'team'      => 'static_pages#team'
-  
+
   resources :books
   resources :bookclubs
   
