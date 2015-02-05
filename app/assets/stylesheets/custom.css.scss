@@ -72,13 +72,13 @@ p {
     float: left;
     margin-right: 10px;
     font-size: 1.7em;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     letter-spacing: -1px;
     padding-top: 9px;
     font-weight: bold;
     &:hover {
-      color: #fff;
+      color: gray;
       text-decoration: none;
     }
 }
@@ -133,16 +133,16 @@ max-width: 150px;
 
 
 .navbar-inverse {
-    background-color: #BD261E;
-    border-color: #030033;
+    background-color: #BDBC9A;
+    border-color: #AEAEA8;
     font-weight: bold;
 }
 
 .navbar .nav > li > a {
-color:          white;
+color:          black;
 text-shadow:    none;
 &:hover {
-  color: #00ff00;
+  color: gray;
   text-decoration: none;
 }
 }
